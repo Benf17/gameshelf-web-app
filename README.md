@@ -1,4 +1,4 @@
-# WebShelf Web App
+# GameShelf Web App
 GameShelf is a web application born from my love of video games and 
 my desire for a better way to keep track of the titles I own and play. 
 The application's primary goal is to help gamers who use multiple platforms—such as 
