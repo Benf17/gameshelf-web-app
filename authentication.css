@@ -5,54 +5,111 @@
 }
 
 body{
+    margin: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    /* background-color: #0A112B; */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid red;
 }
 
-header {
+.main-container{
+    flex: 1;
     display: flex;
+    flex-direction: coulumn;
+    justify-content: center;
     align-items: center;
+    font-size: 17px;
 }
 
-.header-content {
+.header-card{
+    width: 100%;
+    padding: 30px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
-    background-color: #131734;
-    width: 100%;
-    padding: 10px 20px;
-    border-bottom: 1px solid #e2dbe9;
+    align-items: center;
+    border: solid 1px black;
 }
 
-.header-title {
+.header-icon{
+    width: auto;
+    height: 1em;
+}
+
+.header-title{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    font-size: 50px;
-    background: linear-gradient(to right, #7369DB, #A15BC5, #C459A8);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
-.header-icon {
-    width: 50px;
-    height: 50px;
-    filter: drop-shadow(0px 0px 8px #8b5cf6);
+.auth-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+    width: 350px;
+    border: solid 1px black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
-.register-form{
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    border: 1px solid black;
+.auth-card p{
+    font-size: 13px;
+}
+
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-header{
+    font-weight: bold;
+    font-size: 20px;
     text-align: center;
-    padding: 100px;
+    width: 300px;
+    padding: 10px;
+    border-bottom: solid 1px black;
 }
 
-.register-text{
-    padding-bottom: 100;
+.input-card{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+.input-card input{
+    padding: 5px;
+    height: 30px;
+    width: 300px;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+
+.auth-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.auth-buttons button{
+    width: 100px;
+    font-size: 13px;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+

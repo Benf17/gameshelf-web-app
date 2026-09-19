@@ -6,29 +6,38 @@
     <link rel="stylesheet" href="authentication.css">
 </head>
 <body>
-     <header>
-        <h1>Game Track</h1>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+     <header class="header-card">
+        <h1 class="header-title">
+            <img class="header-icon" src="Images/gamepad-solid-full.svg" alt="Gamepad Icon">
+            Game Shelf
+        </h1>
     </header>
-    <hr>
-
-    <form action="">
-        <label for="fullname">Full Name</label>
-        <input type="text" name="fullname" id="fullname">
-        <br>
-        <label for="username">Username</label>
-        <input type="text" name="uername" id="username">
-        <br>
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
-        <br>
-        <label for="password">Password</label>
-        <input type="text" name="password" id="password">
-        <br>
-        <input type="submit" value="Register">
-    </form>
-    <p>already have an account? <a href="login.html">login here.</a></p> 
-</body>
+    <main class="main-container">
+        <div class="auth-card">
+            <div class="auth-header">Register</div>
+            <form action="" class="auth-form">
+                <div class="input-card">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                <div class="input-card">
+                    <label for="user">Username</label>
+                    <input type="text" name="user" id="user">
+                </div>
+                <div class="input-card">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="input-card">
+                    <label for="passwrd">Password</label>
+                    <input type="text" name="passwrd" id="passwrd">
+                </div>
+                <div class="auth-buttons">
+                    <button type="submit">Register</button>
+                    <button type="button">Cancel</button>
+                </div>
+                <p>Already have an account? <a href="login.html">Login Here!</a></p>
+            </form>
+        </div>
+    </main>
 </html>

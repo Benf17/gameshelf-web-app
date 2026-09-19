@@ -3,40 +3,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="app-style.css">
 </head>
 <body>
-    <header>
-        <h1>Game Track</h1>
-        
-        <nav>
-            <a href="">My library</a>
-            <a href="">Wishlist</a>
-            <a href="">Add Game</a>
+    <header class="header-card">
+        <h1 class="header-title">
+            <img class="header-icon" src="Images/gamepad-solid-full.svg" alt="Gamepad Icon">
+            Game Shelf
+        </h1>
+    </header> 
+
+    <div class="app-body">
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="">Library</a>
+                <a href="">Add Game</a>
+                <a href="">Wishlist</a>
+            </div>
+            <div class="logout"><a href="">Logout</a></div>
         </nav>
-    </header>
-    <hr>
-    
-    <form action="">
-        <label for="gname">Game Title: </label>
-        <input type="text" id="gname" name="gname">
-        <br>
-        <label for="playtime">Playtime: </label>
-        <input type="text" name="playtime" id="playtime'">
-        <br>
-        <label for="status">Status: </label>
-        <input type="text" name="status" id="status">
-        <br>
-        <label for="platform">Platform: </label>
-        <input type="text" name="platform" id="platform">
-        <br>
-        <label for="rating">Rating: </label>
-        <input type="text" name="rating" id="rating">
-        <br>
-        <label for="comments">Comments: </label>
-        <input type="text" name="comments" id="comments">
-        <br>
-        <input type="submit" value="Add Game">
-        <input type="button" value="Cancel">
-    </form>
+
+        <main class="app-content">
+            <section class="add-game-card">
+                <div class="add-game-header">Add Game</div>
+
+                <form action="" class="add-game-form">
+                    <div class="add-game-input">
+                        <label for="gname">Game Title: </label>
+                        <input type="text" id="gname" name="gname">
+                    </div>
+                    <div class="add-game-input">
+                        <label for="playtime">Playtime: </label>
+                        <input type="text" name="playtime" id="playtime'">
+                    </div>
+                    <div class="add-game-input">
+                        <label for="status">Status: </label>
+                        <input type="text" name="status" id="status">
+                    </div>
+                    <div class="add-game-input">
+                        <label for="platform">Platform: </label>
+                        <input type="text" name="platform" id="platform">
+                    </div>
+                    <div class="add-game-input">
+                        <label for="rating">Rating: </label>
+                        <input type="text" name="rating" id="rating">
+                    </div>
+                    <div class="add-game-input">
+                        <label for="comments">Comments: </label>
+                        <input type="text" name="comments" id="comments">
+                    </div>
+                    <div class="add-game-input-btns">
+                        <button type="submit">Add Game</button>
+                        <button type="button">Cancel</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
