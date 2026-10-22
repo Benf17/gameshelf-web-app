@@ -2,13 +2,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GameShelf</title>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
     <link rel="stylesheet" href="authentication.css">
 </head>
 <body>
      <header class="header-card">
         <h1 class="header-title">
-            <img class="header-icon" src="Images/gamepad-solid-full.svg" alt="Gamepad Icon">
+           <i class="fa-solid fa-gamepad header-icon" aria-hidden="true"></i>
             Game Shelf
         </h1>
     </header>
@@ -22,7 +24,7 @@
                 </div>
                 <div class="input-card">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                 </div>
                 <div class="auth-buttons">
                     <button type="submit">Login</button>

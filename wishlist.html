@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" href="app-style.css">
+</head>
+<body>
+    <header class="header-card">
+        <h1 class="header-title">
+            <i class="fa-solid fa-gamepad header-icon" aria-hidden="true"></i>
+            Game Shelf
+        </h1>
+    </header> 
+
+    <div class="app-body">
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="/game.html"><i class="fa-solid fa-book-open"></i> Library</a>
+                <a href="/wishlist.html" class="active"><i class="fa-regular fa-heart"></i> Wishlist</a>
+            </div>
+            <div class="logout"><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></div>
+        </nav>
+
+        <main class="app-content">
+            <section class="library-view" > 
+                <div  class="library-header-container">
+                    <h2>My Wishlist</h2>
+                    <button type="button" class="add-game-btn">
+                        <i class="fa-solid fa-circle-plus"></i> 
+                        Add to Wishlist
+                    </button>
+                </div>
+                <div class="library-text" hidden>
+                    <p>Your wishlist is empty</p>
+                </div>
+                <div class="games-view">
+                    <div class="game-card">
+                        <img src="Images/minecraft.jpg" class="game-cover">
+                        <div class="game-title">Minecraft</div>
+                    </div>
+                </div>
+            </section>
+            <div class="add-game-view" hidden>
+                <section class="add-game-card" >
+                    <div class="add-game-header">Add Game</div>
+
+                    <form action="" class="add-game-form">
+                        <div class="add-game-input">
+                            <label for="search-game">Game:</label>   
+                            <input type="search" id="search-game" name="search" placeholder="search game...">
+                        </div> 
+                        
+                        <div class="add-game-input-btns">
+                            <button type="submit">Add Game</button>
+                            <button type="button">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

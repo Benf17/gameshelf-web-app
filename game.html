@@ -3,12 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
     <link rel="stylesheet" href="app-style.css">
 </head>
 <body>
     <header class="header-card">
         <h1 class="header-title">
-            <img class="header-icon" src="Images/gamepad-solid-full.svg" alt="Gamepad Icon">
+            <i class="fa-solid fa-gamepad header-icon" aria-hidden="true"></i>
             Game Shelf
         </h1>
     </header> 
@@ -16,48 +18,66 @@
     <div class="app-body">
         <nav class="nav-bar">
             <div class="nav-links">
-                <a href="">Library</a>
-                <a href="">Add Game</a>
-                <a href="">Wishlist</a>
+                <a href="/game.html" class="active"><i class="fa-solid fa-book-open"></i> Library</a> 
+                <a href="/wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist</a>
             </div>
-            <div class="logout"><a href="">Logout</a></div>
+            <div class="logout"><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></div>
         </nav>
 
         <main class="app-content">
-            <section class="add-game-card">
-                <div class="add-game-header">Add Game</div>
-
-                <form action="" class="add-game-form">
-                    <div class="add-game-input">
-                        <label for="gname">Game Title: </label>
-                        <input type="text" id="gname" name="gname">
+            <section class="library-view" hidden> 
+                <div  class="library-header-container">
+                    <h2>My Library</h2>
+                    <button type="button" class="add-game-btn"> <i class="fa-solid fa-circle-plus"></i> Add Game</button>
+                </div>
+                <div class="library-text" hidden>
+                    <p>Your library is empty <br>
+                        Start adding your games
+                    </p>
+                </div>
+                <div class="games-view">
+                    <div class="game-card">
+                        <img src="Images/minecraft.jpg" class="game-cover">
+                        <div class="game-title">Minecraft</div>
                     </div>
-                    <div class="add-game-input">
-                        <label for="playtime">Playtime: </label>
-                        <input type="text" name="playtime" id="playtime'">
-                    </div>
-                    <div class="add-game-input">
-                        <label for="status">Status: </label>
-                        <input type="text" name="status" id="status">
-                    </div>
-                    <div class="add-game-input">
-                        <label for="platform">Platform: </label>
-                        <input type="text" name="platform" id="platform">
-                    </div>
-                    <div class="add-game-input">
-                        <label for="rating">Rating: </label>
-                        <input type="text" name="rating" id="rating">
-                    </div>
-                    <div class="add-game-input">
-                        <label for="comments">Comments: </label>
-                        <input type="text" name="comments" id="comments">
-                    </div>
-                    <div class="add-game-input-btns">
-                        <button type="submit">Add Game</button>
-                        <button type="button">Cancel</button>
-                    </div>
-                </form>
+                </div>
             </section>
+            <div class="add-game-view">
+                <section class="add-game-card">
+                    <div class="add-game-header">Add Game</div>
+
+                    <form action="" class="add-game-form">
+                        <div class="add-game-input">
+                            <label for="search-game">Game: </label>
+                            <input type="search" id="search-game" name="search-game" placeholder="search game...">
+                        </div>
+                        <div class="add-game-input">
+                            <label for="playtime">Playtime: </label>
+                            <input type="text" name="playtime" id="playtime'">
+                        </div>
+                        <div class="add-game-input">
+                            <label for="status">Status: </label>
+                            <input type="text" name="status" id="status">
+                        </div>
+                        <div class="add-game-input">
+                            <label for="platform">Platform: </label>
+                            <input type="text" name="platform" id="platform">
+                        </div>
+                        <div class="add-game-input">
+                            <label for="rating">Rating: </label>
+                            <input type="text" name="rating" id="rating">
+                        </div>
+                        <div class="add-game-input">
+                            <label for="comments">Comments: </label>
+                            <input type="text" name="comments" id="comments">
+                        </div>
+                        <div class="add-game-input-btns">
+                            <button type="submit">Add Game</button>
+                            <button type="button">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
         </main>
     </div>
 </body>
