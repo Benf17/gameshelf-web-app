@@ -34,12 +34,19 @@ These would be the basic functions of the project for now,
 but I would like to enhance it further by adding different features over time.
 
 ## Business Rules
-* A user may add zero or many games to their library.
-* A game may be added to the library of zero or many users.
+* A user may add zero or many user_game records.
+* Each user_game record must belong to exactly one user.
+* A game may appear in zero or many user_game records.
+* Each user_game record must refer to exactly one game.
 * A user may add zero or many games to their wishlist.
-* A game may be added to zero or many wishlists.
+* Each wishlist record must belong to exactly one user.
+* A game may appear in zero or many wishlist.
+* Each wishlist record must refer to exactly one game.
+
 
 Here is an `ERD` that illustrates better the entities and attributes of this project.
 
 ![ERD of gameshelf](/Images/GameShelf-Chart.jpeg)
 
+Here are my database relations.
+![Relations for gameshelg](/Images/Relations-for-gameshelf.jpeg)
