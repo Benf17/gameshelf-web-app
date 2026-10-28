@@ -44,9 +44,22 @@ but I would like to enhance it further by adding different features over time.
 * Each wishlist record must refer to exactly one game.
 
 
-Here is an `ERD` that illustrates better the entities and attributes of this project.
+The `ERD` bewlow illustrates the entities, their attributes, and their relationship between them.
 
 ![ERD of gameshelf](/Images/GameShelf-Chart.jpeg)
 
-Here are my database relations.
+The database relations below illustrates how the `user_game` and `wishlist` tables are related to the
+`user` and `game` tables.
 ![Relations for gameshelg](/Images/Relations-for-gameshelf.jpeg)
+
+## Database Implementation
+The GameShelf database was implemented using MySQL. It contains four tables, `user`, `game`, `user_game`, and `wishlist`.
+The `user_game` table connects users to the games and stores personal experience about each game such as
+`playtime`, `status`, `rating`, `comment`, and the `platform` they are playing on. The `wishlist` table connects users to
+the games they want to acquire and play. Both tables references `user` and `game` tables trough foreign keys `user_id` and `game_id`, 
+setting both keys as primary keys to prevent duplicate entries for the same user and game.
+The database statements are avaliable in [schema.sql](schema.sql).
+
+Below there is an output for `SHOW TABLES` confirming all four tables were succesfully created.
+
+![output of SHOW TABLES](Images/show_tables.png)
