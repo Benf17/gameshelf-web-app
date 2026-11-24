@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +26,8 @@
         </nav>
 
         <main class="app-content">
+
+            <!-- Library view -->
             <section class="library-view" hidden> 
                 <div  class="library-header-container">
                     <h2>My Library</h2>
@@ -42,7 +45,9 @@
                     </div>
                 </div>
             </section>
-            <div class="add-game-view">
+
+            <!-- Add game form view -->
+            <div class="add-game-view" hidden>
                 <section class="add-game-card">
                     <div class="add-game-header">Add Game</div>
 
@@ -78,6 +83,70 @@
                     </form>
                 </section>
             </div>
+
+            <!-- Game details view -->
+            <section class="game-details" id="game-details-view">
+                <div class="game-banner">
+                    <a href="#Library" class="back-to-library"><i class="fa-solid fa-arrow-left"></i> Back to Library</a>
+                </div>
+
+                <div class="game-info">
+                    <div class="game-cover-container">
+                        <img src="Images/minecraft.jpg" class="game-cover-library" alt="Game Cover">
+                    </div>
+
+                    <div class="game-details-info">
+                        <h2 id="detail-game-name">Minecraft</h2>
+
+                        <p class="game-status" id="detail-status">Playing</p>
+
+                        <p class="game-stat">
+                            <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+                            <span>
+                                <strong>Platform:</strong>
+                                <span id="detail-platform">PC</span>
+                            </span>
+                        </p>
+
+                        <p class="game-stat">
+                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                            <span>
+                                <strong>Playtime:</strong>
+                                <span id="detail-playtime">100 hours</span>
+                            </span>
+                        </p>
+
+                        <p class="game-stat">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <strong>Rating:</strong>
+                            <span class="game-rating"
+                                id="detail-rating"
+                                role="img"
+                                aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★★★★★</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-comment">
+                    <h3>Comments</h3>
+                    <p id="detail-comment">No comments yet.</p>
+                </div>
+
+                <div class="game-actions">
+                    <button type="button" id="update-game-btn">
+                        <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                        Update
+                    </button>
+
+                    <button type="button" id="remove-game-btn">
+                        <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                        Remove
+                    </button>
+                </div>
+
+            </section>
         </main>
     </div>
     <script src="scripts/game.js"></script>
